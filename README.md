@@ -11,9 +11,9 @@ pip install cms-draggable-files
 - Add to installed app:
 'cms_draggable_files'
 
-- Add to base.html (to main html file in your project):
-<link rel="stylesheet" type="text/css" href="{% static "css/placeholder.css" %}">
-<script type="text/javascript" src="{% static "js/draggable.js" %}"></script>
+- Add static files to base.html (or to main html file in your project):
+**/static/css/placeholder.css
+/static/js/draggable.js**
 
 - Copy template folder instance to your main project folder. Be shour that placeholder.html from cms_draggable_files is in your template/cms/placeholder.html.
 
