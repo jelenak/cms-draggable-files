@@ -1,0 +1,13 @@
+.fileupload input {
+	position: absolute;
+    cursor: pointer;
+    width: 400px;
+    height: 40px;
+    opacity: 0.0; 
+    color: transparent; 
+    overflow:hidden;  
+}
+
+form {
+	position:absolute;
+}
