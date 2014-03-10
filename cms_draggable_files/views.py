@@ -83,6 +83,11 @@ DRAGGABLE_PLUGIN_CREATORS = [
     FileCreator
 ]
 
+try:
+    DRAGGABLE_PLUGIN_CREATORS.append(getattr(settings, 'DRAGGABLE_ADDITIONAL_PLUGIN_CREATORS'))
+except:
+    pass
+
 
 def file_upload(request):
     current_language = request.LANGUAGE_CODE
