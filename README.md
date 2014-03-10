@@ -17,6 +17,9 @@ pip install cms-draggable-files
 
 - Copy template folder instance to your main project folder. Be shour that placeholder.html from cms_draggable_files is in your template/cms/placeholder.html.
 
+- Add cms-draggable-files to your project urls.py:
+  url(r'^', 'cms_draggable_files.views.file_upload', name='file_upload'),
+
 Enjoy drag and drop files future in django-cms.
 
 
