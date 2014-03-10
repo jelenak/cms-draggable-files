@@ -18,7 +18,10 @@ pip install cms-draggable-files
 - Copy template folder instance to your main project folder. Be shour that placeholder.html from cms_draggable_files is in your template/cms/placeholder.html.
 
 - Add cms-draggable-files to your project urls.py:
-  url(r'^', 'cms_draggable_files.views.file_upload', name='file_upload'),
+  $ url(r'^', include('cms_draggable_files.urls')),
+
+- If You want additional custom file creator that for example will convert files from odf to pdf on drag and drop, You need in settings register your custom creator class:
+  DRAGGABLE_ADDITIONAL_PLUGIN_CREATORS = [ ODF_TO_PDF_CREATOR, ]
 
 Enjoy drag and drop files future in django-cms.
 
